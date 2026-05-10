@@ -25,7 +25,7 @@ def predict():
         dewpoint = float(data['dewpoint'])
         sunshine = float(data['sunshine'])
 
-        # 7 features (IMPORTANT)
+        
         features = np.array([[cloud, humidity, pressure, wind, direction, dewpoint, sunshine]])
 
         prediction = model.predict(features)
