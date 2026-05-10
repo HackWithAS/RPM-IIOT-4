@@ -4,7 +4,7 @@ import joblib
 
 app = Flask(__name__)
 
-# Load trained model
+
 loaded = joblib.load("rainfall_prediction_model.pkl")
 model = loaded['model']
 
